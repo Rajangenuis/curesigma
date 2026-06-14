@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional 3D Portfolio</title>
+    <style>
+        /* --- FUTURISTIC 3D PORTFOLIO STYLING --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: radial-gradient(circle at 50% 50%, #1e1b4b, #090514);
+            color: #f8fafc;
+            min-height: 100vh;
+            overflow-x: hidden;
+            padding-bottom: 50px;
+        }
+
+        /* Glassmorphism Navbar */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            background: linear-gradient(45deg, #00f2fe, #4facfe);
+            
+            -webkit-text-fill-color: transparent;
+        }
+
+        nav a {
+            color: #94a3b8;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #00f2fe;
+            text-shadow: 0 0 10px rgba(0, 242, 254, 0.5);
+        }
+
+        /* 3D Profile Section */
+        .profile-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 80px 20px;
+        }
+
+        .profile-card {
+            background: rgba(255, 255, 255, 0.04);
+            padding: 50px;
+            border-radius: 24px;
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4),
+                        inset 0 0 30px rgba(255, 255, 255, 0.05);
+            transform: perspective(1000px) rotateX(15deg) rotateY(-5deg);
+            transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.6s ease;
+            max-width: 750px;
+            text-align: center;
+        }
+
+        /* Mouse hover karne par 3D card seedha hoga aur glow karega */
+        .profile-card:hover {
+            transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(10px);
+            box-shadow: 0 40px 80px rgba(0, 242, 254, 0.15),
+                        0 0 40px rgba(79, 172, 254, 0.1);
+            border-color: rgba(0, 242, 254, 0.3);
+        }
+
+        /* Placeholder for Profile Pic / Icon */
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #4facfe, #00f2fe);
+            margin: 0 auto 25px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 45px;
+            box-shadow: 0 10px 25px rgba(0, 242, 254, 0.4);
+        }
+
+        .profile-card h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+            font-weight: 700;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #00f2fe;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        .about-text {
+            font-size: 1.05rem;
+            color: #cbd5e1;
+            line-height: 1.7;
+        }
+    </style>.
+}
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="logo">PORTFOLIO.</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#achievements">Achievements</a>
+        </nav>
+    </header>
+
+    <!-- Profile Intro Section -->
+    <section class="profile-container" id="about">
+        <div class="profile-card">
+            <!-- Aap yahan apni photo ka link laga sakte hain, abhi ke liye ek premium emoji hai -->
+            <div class="avatar">👨‍💻</div>
+            <h1>RAJAN KUMAR</h1>
+            <div class="tagline">DATA SCIENCE / Student / WEB DEVELOPER </div>
+            <p class="12TH">
+                Welcome to my digital space! I AM A passionate developer. Mujhe nayi technologies seekhna aur unse behtareen real-world projects banana pasand hai. Niche aap mere saare projects aur achievements dekh sakte hain.
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>
